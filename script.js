@@ -13,14 +13,15 @@ window.addEventListener('scroll', function() {
     
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
+    const company = document.getElementById('company')?.value || '';
     const message = document.getElementById('message').value;
     const status = document.getElementById('form-status');
   
     if (name === '' || email === '' || message === '') {
-      status.textContent = 'Preencha todos os campos!';
+      status.textContent = 'Por favor, preencha todos os campos obrigatórios.';
       status.style.color = 'red';
     } else {
-      status.textContent = 'Mensagem enviada com sucesso!';
+      status.textContent = 'Solicitação enviada com sucesso! Entraremos em contato em breve.';
       status.style.color = 'green';
   
       // Limpar os campos após o envio
