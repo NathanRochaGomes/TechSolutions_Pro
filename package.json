@@ -1,0 +1,17 @@
+{
+  "name": "techsolutions-pro",
+  "version": "1.0.0",
+  "description": "Site institucional da TechSolutions Pro",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo 'Site estático pronto para deploy'"
+  },
+  "keywords": ["website", "corporate", "tech"],
+  "author": "TechSolutions Pro",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
